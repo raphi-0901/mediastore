@@ -1,0 +1,140 @@
+/* --- Override Default Datepicker Styles */
+.datepicker-inline, .table-condensed {
+    width: 100%;
+}
+
+.datepicker-days > .table-condensed {
+    height: 0;
+    min-height: 450px;
+}
+
+.datepicker-days > .table-condensed tbody {
+    height: 100%;
+}
+
+.datepicker-days > .table-condensed td {
+    border-radius: 0;
+}
+
+.datepicker-days > .table-condensed td {
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: contain !important;
+}
+
+.datepicker-days > .table-condensed td.active.active {
+    background-color: transparent !important;
+    background-image: url("../images/Circle-Lightblue.svg") !important;
+
+}
+
+.datepicker table tr td.disabled, .datepicker table tr td.disabled:hover {
+    color: var(--light) !important;
+}
+
+.datepicker-days > .table-condensed td.active.disabled.disabled {
+    background-color: transparent !important;
+    background-image: url("../images/Circle-Lightgrey.svg") !important;
+    color: var(--dark) !important;
+}
+
+.datepicker-days > .table-condensed td.disabled.disabled.bookedDay {
+    color: var(--dark) !important;
+}
+
+.datepicker-days > .table-condensed td.disabled.disabled.fullDay {
+    color: var(--dark) !important;
+}
+
+.datepicker-days > .table-condensed td.active.disabled.disabled:hover {
+    background-color: transparent !important;
+    background-image: url("../images/Circle-Lightgrey.svg") !important;
+    color: var(--gray);
+}
+
+.datepicker-days > .table-condensed td:hover {
+    background-color: transparent !important;
+    background-image: url("../images/Circle-Lightgrey.svg") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: contain !important;
+}
+
+.datepicker-days > .table-condensed th:hover {
+    background: none;
+}
+.datepicker-days .datepicker-switch:hover {
+    cursor: default;
+}
+
+.datepicker-days .next:hover, .datepicker-days .prev:hover {
+    background-image: url("../images/Circle-Lightgrey.svg") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: contain !important;
+}
+
+.shoppingCart {
+    background-image: url("../images/Circle-Outline-Info.svg") !important;
+}
+
+.disabled.disabled.shoppingCart {
+    color: #999;
+    background-image: url("../images/Circle-Outline-Info.svg") !important;
+}
+
+.datepicker table tr td.disabled, .datepicker table tr td.disabled:hover {
+    color: #ececec;
+}
+
+.paidDay {
+    background-image: url("../images/Circle-Outline-Success.svg") !important;
+}
+
+.unavailable {
+    color: #999 !important;
+    background-image: url("../images/Circle-Outline-Error.svg") !important;
+}
+
+.datepicker .datepicker-switch, .datepicker .next, .datepicker .prev, .datepicker tfoot tr th {
+    font-size: 1.3em;
+}
+
+.datepicker .next, .datepicker .prev{
+    font-size: 2em;
+}
+
+.datepicker tbody {
+    margin-top: 30px;
+}
+
+@media all and (min-width: 2000px){
+    .datepicker-days > .table-condensed {
+        min-height: 700px;
+    }
+}
+
+@media all and (max-width: 767px){
+    .datepicker-days > .table-condensed {
+        min-height: 400px;
+    }
+    .datepicker td, .datepicker th {
+        padding: 0 !important;
+        margin: 0 !important;
+        height: 20px !important;
+    }
+}
+@media all and (max-width: 576px){
+    .datepicker-days > .table-condensed {
+        min-height: 250px;
+    }
+}
+/*
+.datepicker-days > .table-condensed td.active.active:hover {
+    background-color: transparent !important;
+    background-image: url("../images/Circle-Blue.svg") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: contain !important;
+}*/
+

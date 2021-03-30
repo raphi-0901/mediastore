@@ -1,0 +1,347 @@
+:root{--always-dark:#474d56;}
+
+.topnav-logo {
+    min-width: 60px !important;
+}
+
+label {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */ }
+
+.jq-icon-info {
+    background-color: #8C9EFF!important;
+    color: #fff!important;
+    border-color: #8C9EFF!important;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVEhLY2AYBfQMgf///3P8+/evAIgvA/FsIF+BavYDDWMBGroaSMMBiE8VC7AZDrIFaMFnii3AZTjUgsUUWUDA8OdAH6iQbQEhw4HyGsPEcKBXBIC4ARhex4G4BsjmweU1soIFaGg/WtoFZRIZdEvIMhxkCCjXIVsATV6gFGACs4Rsw0EGgIIH3QJYJgHSARQZDrWAB+jawzgs+Q2UO49D7jnRSRGoEFRILcdmEMWGI0cm0JJ2QpYA1RDvcmzJEWhABhD/pqrL0S0CWuABKgnRki9lLseS7g2AlqwHWQSKH4oKLrILpRGhEQCw2LiRUIa4lwAAAABJRU5ErkJggg==)!important;
+}
+
+.select2-search--dropdown {
+    display: none !important;
+}
+
+.select-inline > span {
+    width: 150px !important;
+}
+.authentication-bg-primary {
+    background-image: url(../images/bg-pattern-light2.svg) !important;
+    background-size: cover;
+    background-position: center;
+}
+
+table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_desc_disabled:before {
+    content: "\f0d8";
+    font-family: 'Font Awesome\ 5 Free';
+    float: left;
+}
+
+table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_desc_disabled:after {
+    content: "\f0d7";
+    font-family: 'Font Awesome\ 5 Free';
+    float: left;
+    margin-right: 10px;
+}
+
+.no-sort-symbol:before, .no-sort-symbol:after {
+    content: "" !important;
+}
+
+.dataTables_filter {
+    float: right;
+}
+
+.table-striped-with-hidden-row > tbody > tr:nth-of-type(2n+1)[aria-expanded="true"] {
+    border-bottom: 1px dotted var(--secondary);
+}
+.table-striped-with-hidden-row > tbody > tr:nth-of-type(4n+3) {
+    background-color: var(--light);
+}
+.table-striped-with-hidden-row > tbody > tr:nth-of-type(4n+4) {
+    background-color: var(--light);
+}
+
+.file-upload-label {
+    padding: .45rem .9rem;
+    display: inline-block;
+    width: auto;
+    border: 1px solid transparent;
+    max-width: 300px;
+    border-radius: 2px;
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: center;
+    background-color: var(--secondary);
+    color: var(--white);
+}
+
+.file-upload-label:hover {
+    background-color: #7c8996;
+}
+
+.file-upload {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #8092e5;
+    border-color: #8092e5;
+}
+
+.bg-always-dark {
+    background: var(--always-dark);
+}
+
+/* Animated Button */
+.animated-btn {
+    position: relative;
+    border: none;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    -webkit-animation: highlight-btn 10s infinite;
+    animation: highlight-btn 10s infinite;
+}
+
+.animated-btn::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    -webkit-animation: highlight-btn-after 10s infinite;
+    animation: highlight-btn-after 10s infinite;
+}
+
+@keyframes highlight-btn {
+    0% {transform: scale(1);}
+    30% {transform: scale(1);}
+    50% {transform: scale(1.05);}
+    52% {transform: scale(1.05) translateX(-2px);}
+    54% {transform: scale(1.05) translateX(2px);}
+    56% {transform: scale(1.05) translateX(-2px);}
+    58% {transform: scale(1.05) translateX(2px);}
+    60% {transform: scale(1.05) translateX(-1px);}
+    62% {transform: scale(1.05) translateX(0);}
+    80% {transform: scale(1);}
+    100% {transform: scale(1);}
+}
+
+@keyframes highlight-btn-after {
+    0% {opacity: 0;}
+    30% {opacity: 0;}
+    50% {opacity: 1;}
+    62% {opacity: 1;}
+    80% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+
+/* cookie-consent*/
+.js-cookie-consent.cookie-consent {
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    background-color: var(--light);
+    z-index: 1100;
+    /*display: block !important; User has to refresh page after accepting when this option is enabled */
+}
+span.cookie-consent__message {
+    color: var(--dark);
+}
+button.js-cookie-consent-agree {
+    border: none;
+    border-radius: 3px;
+    background: var(--success);
+    padding: 10px 15px;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Toast for Add2HS Notification */
+.toast {
+    position: fixed;
+    top: 10px;
+    left: 10px; right: 10px;
+    margin: 0 auto;
+    z-index: 1200;
+}
+
+.toast.show {
+    visibility: visible;
+    -webkit-animation: toast-in 0.5s;
+    animation: toast-in 0.5s;
+}
+
+.toast.hide {
+    visibility: visible;
+    -webkit-animation: toast-out 0.5s;
+    animation: toast-out 0.5s;
+}
+
+@keyframes toast-in {
+    from {
+        top: -300px;
+        opacity:0
+    }
+
+    to {
+        top: 10px;
+        opacity: 1
+    }
+}
+
+@keyframes toast-out {
+    from {
+        top: 10px;
+        opacity:1
+    }
+
+    to {
+        top: -300px;
+        opacity: 0
+    }
+}
+
+/* Toast for Error/Success Notification */
+.jq-toast-wrap.top-right {
+    top: 85px;
+}
+
+/* Calendar Details */
+.booked-details-week-day {
+    font-size: 2.5em;
+}
+.booked-details-date {
+    font-size: 3em;
+    font-weight: bold;
+}
+.booked-details-title {
+    margin-top: 2em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.booked-details-description {
+    font-size: 1.2em;
+}
+
+.booked-details-container {
+    border-radius: 4px 0 0 4px;
+}
+
+.note-editable {
+    line-height: 1.0;
+}
+
+@media all and (max-width: 767px){
+    .booked-details-container {
+        border-radius: 0 0 4px 4px;
+    }
+    .jq-toast-wrap.top-right {
+        right: 15px;
+    }
+    .dataTables_filter {
+        float: left;
+        margin-top: 10px;
+    }
+}
+
+.mobile-table-details tr {
+    background: none !important;
+}
+
+.table-striped-own tbody tr.odd {
+    background-color: var(--light);
+}
+.table-striped-own tbody tr.even {
+    background-color: transparent;
+}
+
+.z-index-2 {
+    z-index: 2;
+}
+
+/* Apexcharts */
+.apexcharts-legend {
+    bottom: -5px !important;
+}
+
+.apexcharts-legend-series {
+    margin: 5px !important;
+}
+
+/* No more tables on mobile */
+@media only screen and (max-width: 767px) {
+
+    /* Force table to not be like tables anymore */
+    .mobile-table table,
+    .mobile-table thead,
+    .mobile-table tbody,
+    .mobile-table th,
+    .mobile-table td,
+    .mobile-table tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    .mobile-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .mobile-table tr { background: transparent; padding: 10px 0}
+    .mobile-table-details tr:nth-child(even) { background: inherit }
+    .mobile-table-details tr { border-bottom: 1px solid var(--light) }
+
+    .mobile-table td {
+        /* Behave  like a "row" */
+        border: none;
+        position: relative;
+        padding: 0 0 0 40%;
+        white-space: normal;
+        text-align:left;
+    }
+
+    .mobile-table td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align:left;
+        font-weight: bold;
+    }
+
+    /*
+    Label the data
+    */
+    .mobile-table td:before { content: attr(data-title); }
+}
+
+/* Hide/Display Elements on DarkMode */
+@media (prefers-color-scheme: light) {
+    .d-dark {display: none;}
+    .d-light {display: initial;}
+}
+@media (prefers-color-scheme: dark) {
+    .d-dark {display: initial;}
+    .d-light {display: none;}
+}
+
